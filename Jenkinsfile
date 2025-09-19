@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t iti:$BUILD_NUMBER . ;docker tag iti:$BUILD_NUMBER abdelazizgbr/iti-node-app:$BUILD_NUMBER'
+        sh 'docker build -t iti:$BUILD_NUMBER .'
       }
     }
 
