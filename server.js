@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('version 1.0.0\n');
+  res.end('fello from version 2.0.0\n');
 });
 
 server.listen(PORT, () => {
